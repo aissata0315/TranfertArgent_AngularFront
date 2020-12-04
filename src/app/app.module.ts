@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { TransactionsComponent } from './transactions/transactions.component';
 import { FairetransactionComponent } from './fairetransaction/fairetransaction.component';
 import {HttpClientModule} from '@angular/common/http';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,7 @@ import {HttpClientModule} from '@angular/common/http';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, HttpClientModule
+    AppRoutingModule, HttpClientModule, FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

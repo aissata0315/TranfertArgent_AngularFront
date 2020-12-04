@@ -4,9 +4,7 @@
       <div class="panel-heading">
         Liste des transactions
       </div>
-            <div class="panel-body">
-             <button class="btn btn-primary" (click)="onGetTransaction()">Transactions</button>
-           </div>
+
           <div class="panel-body">
               <table *ngIf="transactions" class="table table-striped table-bordered">
                 <tr>
@@ -20,8 +18,8 @@
                   <td>{{t.id}}</td>
                   <td>{{t.date}}</td>
                   <td>{{t.montant}}</td>
-                  <td>{{t.emetteur}}</td>
-                  <td>{{t.recepteur}}</td>
+                  <td>{{t.emetteur.prenom}}</td>
+                  <td>{{t.recepteur.prenom}}</td>
                 </tr>
               </table>
           </div>
